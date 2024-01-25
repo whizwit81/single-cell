@@ -26,8 +26,8 @@ const chooseRandomContender = (contendersList) => {
 }
 
 
-let matchCount = 1
 const gameLogic = () => {
+    let matchCount = 1
     while (contendersArray.length > 1) {
         let firstContender = chooseRandomContender(contendersArray)
         let secondContender = chooseRandomContender(contendersArray)
