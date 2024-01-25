@@ -1,3 +1,8 @@
+// EXTRA TODO
+// -Modularize code
+// -Come up with new way to resolve ties
+// -Add ASCII art
+
 
 //Create an Array of Strings - Each string represents the name of a contender
 
