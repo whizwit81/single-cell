@@ -27,7 +27,6 @@ const chooseRandomContender = (contendersList) => {
 
 
 let matchCount = 1
-let deathCount = 0
 const gameLogic = () => {
     while (contendersArray.length > 1) {
         let firstContender = chooseRandomContender(contendersArray)
