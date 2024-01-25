@@ -26,17 +26,20 @@ const chooseRandomContender = (contendersList) => {
 }
 
 
-let matchCount = 1
-let deathCount = 0
 const gameLogic = () => {
+    let matchCount = 1
     while (contendersArray.length > 1) {
+        // Selects two random contenders Objects from contendersArray
         let firstContender = chooseRandomContender(contendersArray)
         let secondContender = chooseRandomContender(contendersArray)
+        
+        // Ensures that a contender isn't pulled twice to fight itself
         while (firstContender === secondContender) {
             secondContender = chooseRandomContender(contendersArray)
         }
         
         
+        // Pits the two contenders against each other
         if (firstContender.size > secondContender.size) {
             console.log(`${secondContender.name} lost to ${firstContender.name} in a heated battle in match ${matchCount}`)
             firstContender.size++
